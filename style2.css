@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden;
-  background: #fff;
+  background: #87CEFA;
   min-height: 100vh;
 }
 #header {
@@ -81,18 +81,32 @@ section img {
   object-fit: color;
   pointer-events: none;
 }
+section center{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+#hadag{
+  width: 50%;
+  height: auto;
+  left: 25%;
+}
+#soil{
+  width: 200px;
+  height: auto;
+}
 
 section #text {
   position: absolute;
-  color: #094b65;
-  font-size: 10vw;
+  color: #093965;
+  font-size: 4vw;
   text-align: center;
   line-height: 0.55em;
   transform: translateY(-50%);
-}
-
-section #text span {
-  font-size: 0.2em;
   letter-spacing: 2px;
   font-weight: 400;
 }

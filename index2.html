@@ -6,12 +6,22 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./style2.css">
-<link rel="stylesheet" href="./intro.css">
+<link rel="stylesheet" href="./test.css">
 
    <title>Day</title>
 </head>
 <body>
-   <div class="container"></div>
+   <div class="landing">
+      <div class="clouds">
+        <img class="cloud cloudOne" src="./cloud real.png" alt="">
+        <div class="circle"><img src="./vecteezy_water-rabbit-in-chinese-new-year_13120051 (1).png" alt=""></div>
+        <img class="cloud cloudTwo" src="./cloud real2.png" alt="">
+        </div>
+        <div class="cloudsSecond">
+          <img class="cloud cloudOne" src="./cloud real2.png" alt="">
+          <img class="cloud cloudTwo" src="./cloud real.png" alt="">
+        </div>
+      </div>
    <div class="main">
    <header id="header">
       <a href="" class="logo">Day</a>
@@ -22,12 +32,14 @@
       </ul>
    </header>
    <section>
-      <h2 id="text"><span>Амьдрал муухай амьдрах сайхан</span><br>Day</h2>
+    <center class="word">
+      <h2 id="text">Сайхан шинэлээрэй</h2>
+      <img src="./Hadag.png" id="hadag" alt="">
+    </center>
       <img src="./bird1.png" id="bird1" alt="">
       <img src="./bird2.png" id="bird2" alt="">
       <img src="./forest.png" id="forest" alt="">
-      <a href="#sec" id="btn">Explore</a>
-      <img src="./rocks.png" alt="" id="rocks">
+      <!-- <a href="#sec" id="btn">Explore</a> -->
       <img src="./water.png" alt="" id="water">
    </section id="sels">
    <div class="sec" id="sec">
@@ -36,7 +48,6 @@
          Өглөө босоод их ус уух хэрэгтэй түүнчлэн өглөөний цайгаа зайлшгүй уух ёстой. Бид шөнө унтахдаа шингэн болон тамираа алдсан байдаг учир хоол цай ус ууснаар түүнийгээ нөхнө.
          Мөн өглөө банана болон шууд хүнд хоол идэж болохгүй. Яагаад гэвэл банана нь хоол шингээхэд тусалдаг учир өлөн байхдаа ходоодоо хоосон ажлуулна.Нэмж хэлхэд өглөө босоод дасгал хийх нь тэр өдрөө эрч хүчтэй эхлүүлхэд туслана. Та өглөө боссоноос хойш ядаж 1 цагийн дараа утас 
          компьютер аа харах нь зүйтэй учир нь таны утсан дээрх сайн муу мэдээ таны өглөөний эрч хүч дүүрэн энергийг унагааж болно.</p>
-
    </div>
 </div>
    <audio  autoplay >
@@ -47,14 +58,17 @@
       let bird1 =document.getElementById('bird1')
       let bird2 =document.getElementById('bird2')
       let btn =document.getElementById('btn')
-      let rocks =document.getElementById('rocks')
       let forest =document.getElementById('forest')
       let water =document.getElementById('water')
       let header =document.getElementById('header')
+      let hadag =document.getElementById('hadag')
+
 
       window.addEventListener('scroll', function(){
          let value = window.scrollY;
          text.style.top = 50+ value * -0.2 +'%';
+         hadag.style.top = 50+ value * -0.2 +'%';
+
          bird1.style.top = value * -1.5 +'px';
          bird1.style.left = value * 2 +'px';
          bird2.style.top = value * -1.5 +'px';
