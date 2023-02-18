@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./style.css">
+      <title>Document</title>
+      <link rel="shortout icon" type="image/x-icon" href="https://toppng.com/uploads/preview/free-download-cat-png-vector-icon-cat-transparent-background-cat-icon-transparent-background-11563035549ypnlilorb5.png">
+   </head>
+   <body>
+
+   <audio  autoplay >
+      <source src="./nigth.mp3" type="audio/mpeg">
+   </audio>
+   <header>
+      <a href="" class="logo">Nigth</a>
+      <ul>
+         <li><a href="./index2.html">Day</a></li>
+         <li><a href="./index.html">Night</a></li>
+         <li><a href="./about.html">About</a></li>
+      </ul>
+   </header>
+   <section>
+      <img src="./star.png" id="stars" alt="">
+      <img src="./moon.png" id="moon" alt="">
+      <img src="./uul.png" id="uul" alt="">
+      <h2 id="text">Night</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="./had.png" alt="" class="had">
+   </section>
+   <div class="sec" id="sec">
+      <h2>Шөний амьдрал илүү адармаатай</h2>
+      <p>
+         Орой хүнд хоол идэж болохгүй бөгөөд хүнд хоол нь илчлэг болон тослог өндөртэй хоол юм. Өглөө алим идэж болох ч орой идэж болохгүй учир нь алим нь шингэхэд уддаг учир идэж болохгүй. Орой унтхын өмнө дасгал хийх тохиромжгүй бөгөөд таны нойрыг байхгүй болгодог. Орой унтахдаа сүү уувал сайн бөгөөд таныг тайвшируулж сайн амраадаг. Нэмж хэлхэд орой утсаа ухаж болохгүй яагаад гэвэл утсаа удаан харснаар утас болон цахилгаан төхөөрөмжийн ялгаруулдаг цэнхэр гэрэл таны нойрыг арилгадаг. Эцэст нь хэлхэд та эрт унтаж байх шаардлагатай ялангуяа өсвөр насны хүүхдүүд эрт унтаснаар бие физиологийн хувьд өсөж том болно.
+      </p>
+   </div>
+   
+
+
+
+
+
+   <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let uul = document.getElementById('uul');
+      let had = document.getElementById('had');
+      let btn =document.getElementById('btn');
+      let text= document.getElementById('text');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function(){
+         let value = window.scrollY;
+         stars.style.left = value *0.25 +'px';
+         moon.style.top = value *1.05 +'px';
+         uul.style.top = value *0.5 +'px';
+         had.style.top = value *0 +'px';
+         text.style.marginRight = value * 4 + 'px';
+         header.style.top = value *0.5+'px';
+      })
+   </script>
+</body>
+</html>
