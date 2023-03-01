@@ -134,6 +134,8 @@ section #text {
 .sec h3 {
   font-size: 32px;
   color: #fff;
+  text-align: centes;
+width: 100%;
 }
 .sec p{
   font-size: 28px;
@@ -261,7 +263,7 @@ section #text {
       opacity: 1;
     }
   }
-  .buttons{
+.buttons{
     margin-top:30%;
     width:100%;
     height: auto;

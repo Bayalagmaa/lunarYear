@@ -110,6 +110,7 @@ z-index: 1;
 .sec h3 {
 font-size: 24px;
 color: #fff;
+text-align: center;
 }
 
 .sec p {
@@ -482,6 +483,7 @@ padding: 50px 10%;
 
 .sec h3 {
 font-size: 24px;
+text-align: center;
 }
 
 .sec p{
@@ -503,44 +505,33 @@ left: 0;
 margin-top: 10%;
 }
 
-.clouds{
-/* display: none; */
-}
-
-.cloudsSecond{
-/* display: none; */
-}
-
-}
-
 @media only screen and (max-width: 576px) {
-#header .logo {
-font-size: 24px;
-}
+  #header .logo {
+  font-size: 24px;
+  }
 
-#header ul li a {
-font-size: 16px;
-}
+  #header ul li a {
+  font-size: 16px;
+  }
 
-.sec h3 {
-font-size: 20px;
-}
+  .sec h3 {
+  font-size: 20px;
+  text-align: center;
+  }
 
-.sec p{
-font-size: 16px;
-}
+  .sec p{
+  font-size: 16px;
+  }
 
-.word p{
-font-size: 36px;
-}
+  .word p{
+  font-size: 36px;
+  }
 
-.word h2{
-font-size: 24px;
-}
+  .word h2{
+  font-size: 24px;
+  }
 
-#hadag{
-margin-top: 20%;
-}
-
-}
-
+  #hadag{
+  margin-top: 20%;
+  }
+}}
